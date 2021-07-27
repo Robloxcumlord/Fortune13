@@ -1,6 +1,6 @@
 /mob/living/simple_animal/hostile/ghoul
-	name = "feral ghoul"
-	desc = "A ghoul that has lost its mind and become aggressive."
+	name = "Amogus"
+	desc = "Amogus"
 	icon = 'icons/mob/wastemobs.dmi'
 	icon_state = "feralghoul"
 	icon_living = "feralghoul"
@@ -11,9 +11,9 @@
 	speak_emote = list("growls")
 	emote_see = list("screeches")
 	a_intent = INTENT_HARM
-	maxHealth = 80
-	health = 80
-	speed = 3
+	maxHealth = 10
+	health = 10
+	speed = 1
 	harm_intent_damage = 8
 	melee_damage_lower = 15
 	melee_damage_upper = 15
@@ -27,7 +27,8 @@
 	sharpness = SHARP_EDGED //They need to cut their finger nails
 	guaranteed_butcher_results = list(/obj/item/reagent_containers/food/snacks/meat/slab/human/ghoul = 2,
 							/obj/item/stack/sheet/animalhide/human = 1,
-							/obj/item/stack/sheet/bone = 1)
+							/obj/item/stack/sheet/bone = 1,
+							/obj/item/gun/energy/laser/plasma = 1)
 
 //	loot = list(/obj/effect/gibspawner/human, /obj/item/stack/f13Cash/random/low)   // not quite ready for cap drops on ghouls
 
@@ -40,17 +41,17 @@
 
 /mob/living/simple_animal/hostile/ghoul/reaver
 	name = "feral ghoul reaver"
-	desc = "A ghoul that has lost its mind and become aggressive. This one is strapped with metal armor, and appears far stronger."
+	desc = "A funny man"
 	icon = 'icons/mob/wastemobs.dmi'
 	icon_state = "ghoulreaver"
 	icon_living = "ghoulreaver"
 	icon_dead = "ghoulreaver_dead"
 	speed = 2
-	maxHealth = 150
-	health = 150
-	harm_intent_damage = 8
-	melee_damage_lower = 25
-	melee_damage_upper = 25
+	maxHealth = 1000
+	health = 1000
+	harm_intent_damage = 200
+	melee_damage_lower = 200
+	melee_damage_upper = 200
 
 /mob/living/simple_animal/hostile/ghoul/reaver/Initialize()
 	. = ..()
